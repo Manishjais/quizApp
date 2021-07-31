@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="quizContainer">
+                <div class="quizheder">
+                    <h3>Mathematics Quiz</h3>
+                    <p id="usernameInHeader"> </p>
+                </div>
+                <div class="timer" id="timer" ></div>
+                <div class="quesContainer" id="quesContainer">
+                    <div id="question" ></div>
+                    <div class="options">
+                        <ul class="optionlist" style="list-style: none;">
+                            <li class="option" id="option1"> </li>
+                            <li class="option" id="option2"></li>
+                            <li class="option" id="option3"></li>
+                            <li class="option" id="option4"></li>
+                        </ul>
+                        <div class="navbutton">
+                            <button class="quesbutton" id="backbutton" onclick="back()">Back</button>
+                            <button class="quesbutton" onclick="next()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2021/06/02/18/04/education-6305113__340.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.welcomeForm button{
+    display: block;
+    width: 25vw;
+    height: 40px;
+    border-radius: 100px;
+    background-color: teal;
+}
+.welcomeForm :hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.welcomeForm input{
+    width: 25vw;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 4px solid white;
+    color: white;
+    font-size: large;
+    text-align: center;
+    transition: 0.8ms;
+    font-size: 30px;
+    display: block;
+}
+.quizContainer{
+    height: 70%;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 10% 10% auto;
+}
+.quizheder{
+    background-color: turquoise;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.quesContainer{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.timer{
+    background-color: black;
+    color: white;
+   padding: 10px;
+   border-radius: 10px;
+}
+.quesContainer{
+    padding: 10%;
+}
+.options{
+    margin-top: 15px;
+}
+.option{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.options :hover{
+    cursor: pointer;
+}
+.navbutton{
+    display: flex;
+    justify-content: space-between;
+}
+.quesbutton{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 15px;
+}
+.icon{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    background-color: blue;
+}
+.icon p{
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
