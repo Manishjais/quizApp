@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="quizContainer">
+                <div class="quizheder">
+                    <h3>Mathematics Quiz</h3>
+                    <p id="usernameInHeader"> </p>
+                </div>
+                <div class="timer" id="timer" ></div>
+                <div class="quesContainer" id="quesContainer">
+                    <div class="changeTheme">
+                        <button id="btn1" style="background-color: rgb(221, 164, 88) ;"onclick="changeTheme(' rgb(221, 164, 88)')"></button>
+                        <button id="btn2" style="background-color: rgb(237, 162, 240);"onclick="changeTheme(' rgb(237, 162, 240)')"></button>
+                        <button id="btn2" style="background-color: rgb(114, 81, 231);"onclick="changeTheme('rgb(114, 81, 231)')"></button>
+                        <button id="btn2" style="background-color: rgb(134, 236, 114);"onclick="changeTheme('rgb(134, 236, 114)')"></button>
+                        <button id="btn2" style="background-color:  white            ;"onclick="changeTheme('white')"></button>
+                                                
+                    </div>
+                    <div id="question" ></div>
+                    <div class="options">
+                        <ul class="optionlist" style="list-style: none;">
+                            <div class="radio"><input type="radio"  style="width: 20px; height: 20px; margin: 5px;" name="1" id="1"><label style="width: 100%;" for="1"><li class="option" id="option1"></li></label></div>
+                            <div class="radio"><input type="radio"  style="width: 20px; height: 20px; margin: 5px;" name="1" id="2"><label style="width: 100%;" for="2"><li class="option" id="option2"></li></label></div>
+                            <div class="radio"><input type="radio"  style="width: 20px; height: 20px; margin: 5px;" name="1" id="3"><label style="width: 100%;" for="3"><li class="option" id="option3"></li></label></div>
+                            <div class="radio"><input type="radio"  style="width: 20px; height: 20px; margin: 5px;" name="1" id="4"><label style="width: 100%;" for="4"><li class="option" id="option4"></li></label></div>
+                        </ul>
+                        <div class="navbutton">
+                            <button class="quesbutton" id="backbutton" onclick="back()">Back</button>
+                            <button class="quesbutton" onclick="next()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>
